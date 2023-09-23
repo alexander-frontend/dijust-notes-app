@@ -1,0 +1,177 @@
+.editor__preview {
+  color: $color-dark-cyan-blue;
+  font-weight: 400;
+  font-size: 1.4rem;
+  blockquote {
+    font-weight: 500;
+    margin: 1.1rem 0;
+    padding: 2.4rem;
+    padding-right: 3.2rem;
+    border-radius: 0.4rem;
+    border-left: 0.4rem solid $color-light-gray-shade;
+    p {
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      overflow-wrap: break-word;
+    }
+  }
+
+  a {
+    font-weight: 500;
+    color: #428bca;
+    text-decoration: underline;
+    overflow-wrap: break-word;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    padding: 1.1rem 0;
+    overflow-wrap: break-word;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 1.1rem 0;
+    overflow-wrap: break-word;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    padding: 1.1rem 0;
+    overflow-wrap: break-word;
+  }
+
+  ol {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 1.1rem 0;
+    padding-left: 2.4rem;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding: 1.1rem 0;
+    overflow-wrap: break-word;
+  }
+
+  ul {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 1.1rem 0;
+    padding-left: 2.4rem;
+    list-style: none;
+
+    li {
+      font-weight: 500;
+      padding: 0.8rem 0;
+      overflow-wrap: break-word;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 0.4rem;
+        height: 0.4rem;
+        background-color: $color-dark-cyan-blue;
+        border-radius: 50%;
+        margin-right: 0.8rem;
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+
+  h4 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    padding: 1.1rem 0;
+    overflow-wrap: break-word;
+  }
+
+  h5 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    padding: 1.1rem 0;
+    overflow-wrap: break-word;
+  }
+
+  h6 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding: 1.1rem 0;
+    overflow-wrap: break-word;
+  }
+
+  pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    code {
+      color: inherit !important;
+      background-color: transparent;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      overflow-wrap: break-word;
+      white-space: break-spaces;
+    }
+  }
+
+  table {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    display: block;
+    overflow-x: auto;
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid $color-light-gray-shade;
+    }
+    thead tr th {
+      border-bottom: 2px solid $color-light-gray-shade;
+    }
+
+    tbody tr:nth-child(odd) {
+      td,
+      th {
+        background-color: $color-white-smoke;
+      }
+    }
+  }
+
+  mark {
+    padding: 2px;
+    background-color: #ff0;
+  }
+
+  code:not([class]) {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+  }
+}
