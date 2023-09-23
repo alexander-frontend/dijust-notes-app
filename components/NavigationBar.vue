@@ -88,7 +88,7 @@ const deleteNote = () => {
 };
 
 onMounted(() => {
-  ['orientationchange', 'resize'].forEach((event) => {
+  ['orientationchange'].forEach((event) => {
     window.addEventListener(event, () => {
       isMenuOpened.value = false;
     });
