@@ -83,7 +83,8 @@ const toggleActiveNote = (value: number) => (activeNoteIndex.value = value);
     }
 
     @media (max-width: 480px) {
-      padding: 1.2rem;
+      padding: 0.8rem;
+      font-size: 1.4rem;
     }
 
     &.active {
@@ -113,6 +114,7 @@ const toggleActiveNote = (value: number) => (activeNoteIndex.value = value);
   transform: translate(-50%, -50%);
   color: $color-light-cyan-blue;
   font-size: 2.6rem;
+  text-align: center;
   @media (max-width: 480px) {
     display: none;
   }

@@ -177,7 +177,7 @@ onMounted(() => {
   &.opened {
     background: initial;
     padding: 1.4rem;
-    width: 30rem;
+    width: 26rem;
     animation: slideright 0.5s ease-in-out;
     .nav-bar__actions {
       width: initial;
@@ -206,7 +206,7 @@ onMounted(() => {
     width: 6rem;
   }
   100% {
-    width: 30rem;
+    width: 26rem;
   }
 }
 </style>
