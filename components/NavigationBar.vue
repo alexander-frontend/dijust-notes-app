@@ -32,12 +32,7 @@ const addNote = () => {
                 .getAllNotes()
                 .then(
                   (data: any) => {
-                    if (data && data.length > 0) {
-                      activeNoteIndex.value = 0;
-                      setNotesData(data, noteObj.id);
-                      isEditorEnabled.value = true;
-                      searchQuery.value = '';
-                    }
+                    updateNotes(data, false, noteObj.id);
                   },
                   (err) => {
                     alert(err);
@@ -59,7 +54,7 @@ const deleteNote = () => {
   if (confirm('Are you sure?') == true) {
     const { indexedDBHelper } = useMdNotes();
 
-    notes.value = notes.value.filter((note) => {
+    notes.value = notes.value.filter((note: Note) => {
       return currentNoteId.value != note.id;
     });
 
@@ -71,9 +66,7 @@ const deleteNote = () => {
             .deleteNote(currentNoteId.value)
             .then(
               () => {
-                activeNoteIndex.value = 0;
-                isEditorEnabled.value = false;
-                setNotesData(notes.value);
+                updateNotes(notes.value, false);
               },
               (err) => {
                 alert(err);
@@ -87,11 +80,16 @@ const deleteNote = () => {
   }
 };
 
+const updateNotes = (data: any, toggleEditor: boolean, id?: string) => {
+  activeNoteIndex.value = 0;
+
+  isEditorEnabled.value = toggleEditor;
+  setNotesData(data, id);
+};
+
 onMounted(() => {
-  ['orientationchange'].forEach((event) => {
-    window.addEventListener(event, () => {
-      isMenuOpened.value = false;
-    });
+  window.addEventListener('orientationchange', () => {
+    isMenuOpened.value = false;
   });
 });
 </script>
