@@ -130,7 +130,7 @@ onMounted(() => {
   @media (max-width: 480px) {
     padding: 0.2rem 0.6rem 0 0.8rem;
     width: auto;
-    background: $color-light-blue-shade;
+    background: $color-red-orange-shade;
     .nav-bar__actions {
       width: 100%;
       height: 100%;
@@ -166,8 +166,8 @@ onMounted(() => {
     }
 
     .menu-btn {
-      color: $color-white;
-      fill: $color-white;
+      color: $color-light-cyan-blue;
+      fill: $color-light-cyan-blue;
       display: none;
     }
   }
