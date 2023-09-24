@@ -32,7 +32,7 @@ const addNote = () => {
                 .getAllNotes()
                 .then(
                   (data: any) => {
-                    updateNotes(data, false, noteObj.id);
+                    updateNotes(data, true, noteObj.id);
                   },
                   (err) => {
                     alert(err);
