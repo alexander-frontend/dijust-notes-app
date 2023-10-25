@@ -1,4 +1,4 @@
-# DiJust notes app
+# Notes app
 
 Target:
 Develop a simplified version of the Notes application from the macOS operating system using
